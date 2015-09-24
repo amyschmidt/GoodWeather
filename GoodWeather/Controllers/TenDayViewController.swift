@@ -1,5 +1,5 @@
 //
-//  HourlyWeatherViewController.swift
+//  TenDayViewController.swift
 //  GoodWeather
 //
 //  Created by Amy Schmidt on 9/23/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HourlyWeatherViewController: UIViewController, UITableViewDataSource {
+class TenDayViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,11 @@ class HourlyWeatherViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Time \tTemp \tHumidity \tWind \tPrecip"
+        return "Day \tTemp \tHumidity \tWind \tPrecip"
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,12 +28,11 @@ class HourlyWeatherViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let hourCell = tableView.dequeueReusableCellWithIdentifier("HourCell", forIndexPath: indexPath)
+        let dayCell = tableView.dequeueReusableCellWithIdentifier("DayCell", forIndexPath: indexPath)
         
-        hourCell.textLabel?.text = "7:00P \t75º \t40% \t15MPH \t20%"
-        hourCell.selectionStyle = .None
+        dayCell.textLabel?.text = "SUN \t75º \t40% \t15MPH \t20% \t☀️"
+        dayCell.selectionStyle = .None
         
-        return hourCell
+        return dayCell
     }
-
 }

@@ -12,11 +12,15 @@
 		E424DB631BB3523D002EF667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E424DB611BB3523D002EF667 /* LaunchScreen.storyboard */; };
 		E424DB6E1BB3523D002EF667 /* GoodWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB6D1BB3523D002EF667 /* GoodWeatherTests.swift */; };
 		E424DB791BB3523D002EF667 /* GoodWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB781BB3523D002EF667 /* GoodWeatherUITests.swift */; };
-		E424DB871BB3536A002EF667 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E424DB861BB3536A002EF667 /* Weather.storyboard */; settings = {ASSET_TAGS = (); }; };
-		E424DB891BB35373002EF667 /* Cities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E424DB881BB35373002EF667 /* Cities.storyboard */; settings = {ASSET_TAGS = (); }; };
-		E424DB8D1BB35CC5002EF667 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB8C1BB35CC5002EF667 /* CurrentWeatherViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E424DB8F1BB35DD1002EF667 /* HourlyWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB8E1BB35DD1002EF667 /* HourlyWeatherViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E424DB931BB35E06002EF667 /* TenDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB921BB35E06002EF667 /* TenDayViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DB971BB3889D002EF667 /* CurrentWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB941BB3889D002EF667 /* CurrentWeatherViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DB981BB3889D002EF667 /* HourlyWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB951BB3889D002EF667 /* HourlyWeatherViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DB991BB3889D002EF667 /* TenDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DB961BB3889D002EF667 /* TenDayViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DB9C1BB388AF002EF667 /* Cities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E424DB9A1BB388AF002EF667 /* Cities.storyboard */; settings = {ASSET_TAGS = (); }; };
+		E424DB9D1BB388AF002EF667 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E424DB9B1BB388AF002EF667 /* Weather.storyboard */; settings = {ASSET_TAGS = (); }; };
+		E424DBAE1BB39101002EF667 /* WUndergroundAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DBAD1BB39101002EF667 /* WUndergroundAPIManager.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DBB01BB3910A002EF667 /* CurrentWeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DBAF1BB3910A002EF667 /* CurrentWeatherAPIClient.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DBB61BB397D6002EF667 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DBB51BB397D6002EF667 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		E424DBBA1BB39A06002EF667 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424DBB91BB39A06002EF667 /* CurrentWeatherModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +52,15 @@
 		E424DB741BB3523D002EF667 /* GoodWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E424DB781BB3523D002EF667 /* GoodWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITests.swift; sourceTree = "<group>"; };
 		E424DB7A1BB3523D002EF667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E424DB861BB3536A002EF667 /* Weather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
-		E424DB881BB35373002EF667 /* Cities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cities.storyboard; sourceTree = "<group>"; };
-		E424DB8C1BB35CC5002EF667 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewController.swift; sourceTree = "<group>"; };
-		E424DB8E1BB35DD1002EF667 /* HourlyWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherViewController.swift; sourceTree = "<group>"; };
-		E424DB921BB35E06002EF667 /* TenDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TenDayViewController.swift; path = ../TenDayViewController.swift; sourceTree = "<group>"; };
+		E424DB941BB3889D002EF667 /* CurrentWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeatherViewController.swift; path = Controllers/CurrentWeatherViewController.swift; sourceTree = "<group>"; };
+		E424DB951BB3889D002EF667 /* HourlyWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HourlyWeatherViewController.swift; path = Controllers/HourlyWeatherViewController.swift; sourceTree = "<group>"; };
+		E424DB961BB3889D002EF667 /* TenDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TenDayViewController.swift; path = Controllers/TenDayViewController.swift; sourceTree = "<group>"; };
+		E424DB9A1BB388AF002EF667 /* Cities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Cities.storyboard; path = Storyboards/Cities.storyboard; sourceTree = "<group>"; };
+		E424DB9B1BB388AF002EF667 /* Weather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Weather.storyboard; path = Storyboards/Weather.storyboard; sourceTree = "<group>"; };
+		E424DBAD1BB39101002EF667 /* WUndergroundAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WUndergroundAPIManager.swift; sourceTree = "<group>"; };
+		E424DBAF1BB3910A002EF667 /* CurrentWeatherAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherAPIClient.swift; sourceTree = "<group>"; };
+		E424DBB51BB397D6002EF667 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E424DBB91BB39A06002EF667 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeatherModel.swift; path = Models/CurrentWeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +111,13 @@
 		E424DB571BB3523D002EF667 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
-				E424DB861BB3536A002EF667 /* Weather.storyboard */,
-				E424DB881BB35373002EF667 /* Cities.storyboard */,
-				E424DB8C1BB35CC5002EF667 /* CurrentWeatherViewController.swift */,
-				E424DB8E1BB35DD1002EF667 /* HourlyWeatherViewController.swift */,
-				E424DB921BB35E06002EF667 /* TenDayViewController.swift */,
+				E424DBB51BB397D6002EF667 /* SwiftyJSON.swift */,
+				E424DB9E1BB388CE002EF667 /* Storyboards */,
+				E424DB9F1BB388DD002EF667 /* Controllers */,
+				E424DBA01BB388ED002EF667 /* Models */,
 				E424DB581BB3523D002EF667 /* AppDelegate.swift */,
+				E424DBAF1BB3910A002EF667 /* CurrentWeatherAPIClient.swift */,
+				E424DBAD1BB39101002EF667 /* WUndergroundAPIManager.swift */,
 				E424DB5F1BB3523D002EF667 /* Assets.xcassets */,
 				E424DB611BB3523D002EF667 /* LaunchScreen.storyboard */,
 				E424DB641BB3523D002EF667 /* Info.plist */,
@@ -132,6 +141,33 @@
 				E424DB7A1BB3523D002EF667 /* Info.plist */,
 			);
 			path = GoodWeatherUITests;
+			sourceTree = "<group>";
+		};
+		E424DB9E1BB388CE002EF667 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E424DB9B1BB388AF002EF667 /* Weather.storyboard */,
+				E424DB9A1BB388AF002EF667 /* Cities.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E424DB9F1BB388DD002EF667 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E424DB941BB3889D002EF667 /* CurrentWeatherViewController.swift */,
+				E424DB951BB3889D002EF667 /* HourlyWeatherViewController.swift */,
+				E424DB961BB3889D002EF667 /* TenDayViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E424DBA01BB388ED002EF667 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E424DBB91BB39A06002EF667 /* CurrentWeatherModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E424DB9C1BB388AF002EF667 /* Cities.storyboard in Resources */,
+				E424DB9D1BB388AF002EF667 /* Weather.storyboard in Resources */,
 				E424DB631BB3523D002EF667 /* LaunchScreen.storyboard in Resources */,
-				E424DB891BB35373002EF667 /* Cities.storyboard in Resources */,
-				E424DB871BB3536A002EF667 /* Weather.storyboard in Resources */,
 				E424DB601BB3523D002EF667 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E424DB591BB3523D002EF667 /* AppDelegate.swift in Sources */,
-				E424DB931BB35E06002EF667 /* TenDayViewController.swift in Sources */,
-				E424DB8D1BB35CC5002EF667 /* CurrentWeatherViewController.swift in Sources */,
-				E424DB8F1BB35DD1002EF667 /* HourlyWeatherViewController.swift in Sources */,
+				E424DB971BB3889D002EF667 /* CurrentWeatherViewController.swift in Sources */,
+				E424DB981BB3889D002EF667 /* HourlyWeatherViewController.swift in Sources */,
+				E424DBB01BB3910A002EF667 /* CurrentWeatherAPIClient.swift in Sources */,
+				E424DBAE1BB39101002EF667 /* WUndergroundAPIManager.swift in Sources */,
+				E424DBB61BB397D6002EF667 /* SwiftyJSON.swift in Sources */,
+				E424DB991BB3889D002EF667 /* TenDayViewController.swift in Sources */,
+				E424DBBA1BB39A06002EF667 /* CurrentWeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
