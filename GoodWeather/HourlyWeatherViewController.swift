@@ -15,6 +15,10 @@ class HourlyWeatherViewController: UIViewController, UITableViewDataSource {
 
     }
     
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Time \tTemp \tHumidity \tWind \tPrecip"
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -22,7 +26,7 @@ class HourlyWeatherViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let hourCell = tableView.dequeueReusableCellWithIdentifier("HourCell", forIndexPath: indexPath)
         
-        hourCell.textLabel?.text = "Hello"
+        hourCell.textLabel?.text = "7:00P \t75º \t40% \t15MPH \t20%"
         hourCell.selectionStyle = .None
         
         return hourCell

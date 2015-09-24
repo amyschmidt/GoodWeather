@@ -15,6 +15,10 @@ class TenDayViewController: UIViewController, UITableViewDataSource {
 
     }
     
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Day \tTemp \tHumidity \tWind \tPrecip"
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -22,7 +26,7 @@ class TenDayViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let dayCell = tableView.dequeueReusableCellWithIdentifier("DayCell", forIndexPath: indexPath)
         
-        dayCell.textLabel?.text = "Hello"
+        dayCell.textLabel?.text = "SUN \t75º \t40% \t15MPH \t20%"
         dayCell.selectionStyle = .None
         
         return dayCell
